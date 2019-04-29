@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>San Angelico Museum of Contemporary Art</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="homeScreen" data-role="page">
+    <div class="app">
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <p id="battery-status"></p>
+            </div>
+        </div>
+    <img src="imgs/my_banner.jpg" class="banner" />
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+        <li><a href="#currentExhibits">Current Exhibits</a></li>
+        <li><a href="#pastExhibits">Past Exhibits</a></li>
+        <li><a href="">Calendar of Events</a></li>
+        <li><a href="#discoverScreen">[ Discover ]</a></li>
+        <li><a href="#ticketScreen">Tickets</a></li>
+        <li><a href= "#galleryScreen">Gallery</a></li>
+
+      </ul>
+      <div class="ui-grid-a center">
+        <div class="ui-block-a">
+          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+        </div>
+        <div class="ui-block-b">
+          <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="currentExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Current Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/Westhoff_thumb.png">
+            <h2>Siobhan Westhoff</h2>
+            <p>Final Weeks</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/101733188_thumb.png">
+            <h2>RED</h2>
+            <p>Eleanor Friosh</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/106588354_thumb.png">
+            <h2>Imbalanced</h2>
+            <p>Simone Best, Sheldon Crane, and Elizabeth Moore</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/924520721_thumb.png">
+            <h2>Morten Rand-Hendriksen</h2>
+            <p>The Untitled Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Vision_thumb.png">
+            <h2>VISION</h2>
+            <p>New Works from the SAMOCA Permanent Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Watching_thumb.png">
+            <h2>Paul Shellmont: Bird Watching</h2>
+            <p>Upcoming Exhibition</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="pastExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Past Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/GroundSwell_thumb.png">
+            <h2>Groundswell: Design Series II</h2>
+            <p> </p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Buildings_thumb.png">
+            <h2>Reflections on Architecture: Imagining Buildings</h2>
+            <p> </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="mapScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Grand Theft Auto: San Angelico</h2>
+      <p class="center">800 W University Pkwy, Orem, UT 84058
+        <br>(800)555-1212</p>
+      <div id="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.7624248175107!2d-111.71865968460818!3d40.281027379381136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b1faf2c21bb%3A0x25c7cac4d97add70!2s800+W+University+Pkwy%2C+Orem%2C+UT+84058!5e0!3m2!1sen!2sus!4v1553731778880" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <div id="discoverScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <img id="qrcode" src="imgs/qr.png" />
+      <h3 class="center">Discover More Exciting Stories</h3>
+      <p class="center">Any time you see this QR code, scan it using the Discover button to see additional content from SAMOCA.</p>
+      <a id="qrScanBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search">Discover</a>
+    </div>
+  </div>
+
+  <div id="ticketScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+        <h1>SAMOCA</h1>
+        <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+          <li>
+            <a href="#">General Admission -- $20</a>
+          </li>
+          <li>
+              <a href="#">Backstage Passes -- $50</a>
+          </li>
+          <li>
+              <a href="#">VIP Ultimate Experience -- $1000</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  <div id="galleryScreen" data-role="page">
+      <header data-role="header" data-position="fixed" data-id="appHeader">
+          <h1>SAMOCA</h1>
+          <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+      </header>
+      <div data-role="content">
+          <img src="imgs/Museum.png" class="banner" />
+          <h2>Our Home</h2>
+      </div>
+  </div>
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Grand Theft Auto: San Angelico</h2>
+      <h3 class="center">Coming Spring 2021</h3>
+      <img class="center banner" src="imgs/gta.jpg" />
+      <p>Craft beer affogato leggings put a bird on it knausgaard schlitz, sustainable bicycle rights gastropub dreamcatcher kombucha freegan godard. Hella affogato vinyl bespoke fingerstache messenger bag dreamcatcher farm-to-table. Raclette vape pok pok cardigan. Woke affogato DIY butcher kitsch.
+        </p>
+      </div>
+  </div>
+  <!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+  </script>
+</body>
+
+</html>
