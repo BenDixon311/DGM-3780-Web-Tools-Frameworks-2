@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>World of Warcraft Classic</title>
   <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
   <style>
     #homeBanner {
       width: 100%;
@@ -37,28 +38,25 @@
 <body>
   
   <div id="homeScreen" data-role="page">
-    <!-- <div class="app">
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-                <p id="battery-status"></p>
-            </div>
-        </div> -->
+   
     <img src="imgs/classicbanner.jpg" class="banner" />
     <div data-role="content">
       <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
         <li><a href="#whatWeKnow">What We Know</a></li>
         <li><a href="#races">Races</a></li>
         <li><a href="#classes">Classes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
 
       </ul>
       <div class="ui-grid-a center">
-        <div class="ui-block-a">
-          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
-        </div>
-        <div class="ui-block-b">
-          <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
-        </div>
+          <div class="app">
+              <div id="deviceready" class="blink">
+                  <p class="event listening">Connecting to Device</p>
+                  <p class="event received"></p>
+                  <p id="battery-status"></p>
+              </div>
+          </div>
+        
       </div>
     </div>
   </div>
@@ -127,58 +125,138 @@
       <h1>WoW Classic</h1>
       <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
     </header>
-    <div data-role="collapsible" data-inset="false">
-      <h3><img src="imgs/class_druid.jpg">Druid</h3>
+    <h1 class="center">Races</h1>
+    <div data-role="collapsible" data-inset="true">
+      <h3><img src="imgs/class_druid.jpg">  Druid</h3>
+      <p>Druids are the keepers of the world. Locked in slumber for generations, they awoke to meet the threat of the Burning Legion during its recent invasion. After Archimonde's defeat, the Druids chose to remain in the waking world and help to rebuild their shattered lands. The Legion's attack left a terrible scar on the natural order, and the Druids seek to heal it.</p>
       <ul data-role="listview">
         <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+        <li>Tauren <img src="imgs/race_tauren_male.png"></li>
       </ul>
     </div>
+    <div data-role="collapsible" data-inset="true">
+      <h3><img src="imgs/class_hunter.jpg">  Hunter</h3>
+      <p>Azeroth is home to a wide variety of beasts. From the new world of Lordaeron to the old world of Kalimdor, all manner of creatures can be found. Some are friendly, some are ferocious and aggressive - yet they all have one thing in common. Each creature shares a special connection with Hunters. Hunters track, tame and slay all manner of animals and beasts found in the wilds. Whether they rely on bows or firearms, Hunters consider their weapons and pets to be their only true friends.</p>
+      <ul data-role="listview">
+          <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+          <li>Tauren <img src="imgs/race_tauren_male.png"></li>
+          <li>Dwarf <img src="imgs/race_dwarf_male.png"></li>
+          <li>Orc <img src="imgs/race_orc_male.png"></li>
+          <li>Troll <img src="imgs/race_troll_male.png"></li>
+      </ul>
+    </div>
+    <div data-role="collapsible" data-inset="true">
+        <h3><img src="imgs/class_warrior.jpg">  Warrior</h3>
+        <p>Warriors are the melee-centered class. These characters are as tough as nails and masters of weaponry and tactics. The special abilities of the warrior are naturally combat-oriented.</p>
+        <ul data-role="listview">
+            <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+            <li>Human <img src="imgs/race_human_male.png"></li>
+            <li>Gnome <img src="imgs/race_gnome_male.png"></li>
+            <li>Tauren <img src="imgs/race_tauren_male.png"></li>
+            <li>Dwarf <img src="imgs/race_dwarf_male.png"></li>
+            <li>Orc <img src="imgs/race_orc_male.png"></li>
+            <li>Troll <img src="imgs/race_troll_male.png"></li>
+            <li>Undead<img src="imgs/race_undead_male.png"></li>
+        </ul>
+      </div>
+      <div data-role="collapsible" data-inset="true">
+        <h3><img src="imgs/class_mage.jpg">  Mage </h3>
+        <p>The Mages of Warcraft once centered their powers within the mageocracy of Dalaran. After that kingdom's destruction by the Burning Legion, however, the arcane arts spread to the far corners of the world.</p>
+            <li>Human <img src="imgs/race_human_male.png"></li>
+            <li>Gnome <img src="imgs/race_gnome_male.png"></li>
+            <li>Troll <img src="imgs/race_troll_male.png"></li>
+            <li>Undead<img src="imgs/race_undead_male.png"></li>
+      </div>
+      <div data-role="collapsible" data-inset="true">
+          <h3><img src="imgs/class_paladin.jpg">  Paladin </h3>
+          <p>Upholders of the Holy Light and defenders of the Alliance, the Paladins can be found from the northern forests of the Tirisfal Glades, fighting back the advance of the Forsaken, to the southern reaches of the Blasted Lands, ceaselessly upholding their vigil against demonic forces from beyond the Dark Portal. Wielding their mighty hammers and the strength of the Light, these holy warriors command forces in battle, all the while throwing themselves to where the fighting is the thickest.</p>
+              <li>Human <img src="imgs/race_human_male.png"></li>
+              <li>Dwarf <img src="imgs/race_dwarf_male.png"></li>
+        </div>
+        <div data-role="collapsible" data-inset="true">
+            <h3><img src="imgs/class_priest.jpg">  Priest </h3>
+            <p>Priests lead the many faiths spread throughout the disparate lands of the world of Azeroth. In Kalimdor, Night Elf Priestesses revere the moon goddess Elune, while Dwarven priests in Khaz Modan deliver the message of the Light to their people. In the ruins of Lordaeron, the undead priests of the Forsaken, their faith twisted and tainted by their tortured existences, spread a dark interpretation of the Holy Light. Regardless of their faith, however, all Priests share in their ability to manipulate the minds of those who turn to them for spiritual guidance.</p>
+                <li>Human <img src="imgs/race_human_male.png"></li>
+                <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+                <li>Dwarf <img src="imgs/race_dwarf_male.png"></li>
+                <li>Tauren <img src="imgs/race_tauren_male.png"></li>
+                <li>Troll <img src="imgs/race_troll_male.png"></li>
+                <li>Undead<img src="imgs/race_undead_male.png"></li>
+          </div>
+
+          <div data-role="collapsible" data-inset="true">
+              <h3><img src="imgs/class_rogue.jpg">  Rogue</h3>
+              <p>At home in the shadows and skilled at disappearing from sight, the Rogues of Azeroth are most comfortable when acting in the background. Twisting events to their favor, striking only when advantage is greatest: this is where a Rogue excels. With their cunning tricks, physical abilities, and mastery of concealment and disguise, Rogues have no trouble finding employment as thieves, cutthroats, spies, and assassins.</p>
+              <ul data-role="listview">
+                  <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+                  <li>Human <img src="imgs/race_human_male.png"></li>
+                  <li>Gnome <img src="imgs/race_gnome_male.png"></li>
+                  <li>Dwarf <img src="imgs/race_dwarf_male.png"></li>
+                  <li>Orc <img src="imgs/race_orc_male.png"></li>
+                  <li>Troll <img src="imgs/race_troll_male.png"></li>
+                  <li>Undead<img src="imgs/race_undead_male.png"></li>
+              </ul>
+            </div>
+            <div data-role="collapsible" data-inset="true">
+                <h3><img src="imgs/class_shaman.jpg">  Shaman</h3>
+                <p>Shaman are the spiritual leaders of their tribes and clans. They communicate with spirits, have visions of the future, and guide their people through the darkest of times. Many mistake their wisdom and serenity for a pacifist nature. When challenged, though, shaman have a range of powers available for dealing with threats to the natural order.</p>
+                <ul data-role="listview">
+                    <li>Tauren <img src="imgs/race_tauren_male.png"></li>
+                    
+                    <li>Orc <img src="imgs/race_orc_male.png"></li>
+                    <li>Troll <img src="imgs/race_troll_male.png"></li>
+                   
+                </ul>
+              </div>
+              <div data-role="collapsible" data-inset="true">
+                  <h3><img src="imgs/class_warlock.jpg">  Warlock</h3>
+                  <p>Warlocks were mages that delved too deeply into the roots of demonic power. Consumed by a lust for dark knowledge, they've tapped into chaotic magics from beyond the world. The Burning Legion now feeds them their powers, allowing them to channel destructive energies and call upon the powerful emissaries of their demon masters.
+                    </p>
+                  <ul data-role="listview">
+                      <li>Night Elf <img src="imgs/race_night_elf_male.png"></li>
+                      <li>Gnome <img src="imgs/race_gnome_male.png"></li>
+                     
+                      <li>Orc <img src="imgs/race_orc_male.png"></li>
+                      
+                      <li>Undead<img src="imgs/race_undead_male.png"></li>
+                  </ul>
+                </div>
   </div>
 
-  <div id="ticketScreen" data-role="page">
+  <div id="contact" data-role="page">
     <header data-role="header" data-position="fixed" data-id="appHeader">
-        <h1>SAMOCA</h1>
+        <h1>WoW Classic</h1>
         <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
     </header>
     <div data-role="content">
-        <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
-          <li>
-            <a href="#">General Admission -- $20</a>
-          </li>
-          <li>
-              <a href="#">Backstage Passes -- $50</a>
-          </li>
-          <li>
-              <a href="#">VIP Ultimate Experience -- $1000</a>
-            </li>
-        </ul>
+        <form action="form.php" method="post">
+          <label for="basic">Your Character Name</label>
+          <input type="text" name="name" id="basic" data-mini="true" />
+          <label for="class">What race will you play in classic?</label>
+          <select name="class" id="class" data-role="none">
+              <option value="a">Druid</option>
+              <option value="b">Hunter</option>
+              <option value="c">Mage</option>
+              <option value="d">Paladin</option>
+              <option value="e">Priest</option>
+              <option value="f">Rogue</option>
+              <option value="g">Shaman</option>
+              <option value="h">Warlock</option>
+              <option value="i">Warrior</option>
+          </select>
+
+          
+            
+
+          <div id="deviceready" class="blink">
+              <button id="vibrator">Hype Button! (vibrates your phone)</button>
+          </div>
+          
+        </form>
     </div>
   </div>
 
-  <div id="galleryScreen" data-role="page">
-      <header data-role="header" data-position="fixed" data-id="appHeader">
-          <h1>SAMOCA</h1>
-          <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-      </header>
-      <div data-role="content">
-          <img src="imgs/Museum.png" class="banner" />
-          <h2>Our Home</h2>
-      </div>
-  </div>
-
-  <div id="aboutScreen" data-role="page">
-    <header data-role="header" data-position="fixed" data-id="appHeader">
-      <h1>SAMOCA</h1>
-      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-    </header>
-    <div data-role="content">
-      <h2 class="center">Grand Theft Auto: San Angelico</h2>
-      <h3 class="center">Coming Spring 2021</h3>
-      <img class="center banner" src="imgs/gta.jpg" />
-      <p>Craft beer affogato leggings put a bird on it knausgaard schlitz, sustainable bicycle rights gastropub dreamcatcher kombucha freegan godard. Hella affogato vinyl bespoke fingerstache messenger bag dreamcatcher farm-to-table. Raclette vape pok pok cardigan. Woke affogato DIY butcher kitsch.
-        </p>
-      </div>
-  </div>
+  
   <!--
 	Admission
 	Directions
